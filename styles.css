@@ -10,11 +10,22 @@ body{
     align-items: center;
     background: #F3F5FC;
     position: relative;
+
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.25fr 2fr 0.3fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; */
 }
 
 .super-parent{
     margin-top: 2%;
+    /* display: grid; */
+    /* grid-template-columns: 1fr; */
+    /* grid-template-rows: 0.25fr 1.5fr 0.25fr; */
+    width: 100%;
 }
+    
 .parent {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -108,36 +119,31 @@ button{
     color: #FFFFFF;
 }
 
-.copyButton{
-
-}
-
 .footer{
     display: grid;
-    /* margin-top: 0.5rem; */
     background: #D8DFE8;
     border-radius: 12px;
 }
 
 .button-icon img {
     vertical-align: middle;
-  }
-  
-  .footer-content {
-    text-align: center;
-  }
-  
-  .footer-logo {
-  }
-  
-  .footer .social {
-    justify-content: center;
-    padding: 0;
-  }
+}
+
+.footer-content {
+text-align: center;
+}
+
+.footer-logo {
+}
+
+.footer .social {
+justify-content: center;
+padding: 0;
+}
 
 .footer-container{
     margin-top: 2%;
-  }
+}
 
 .hide{
     visibility: hidden;
@@ -148,6 +154,7 @@ button{
 }
 
 @media screen and (max-width: 1024px) {
+
 
     .parent {
         display: grid;
