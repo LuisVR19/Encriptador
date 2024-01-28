@@ -21,7 +21,9 @@ function encrypt(){
     document.getElementById('resuilt').value = txtEncrypt;
     textArea.value = '';
 
+
     showCopyButton();
+    cleanLeft();
 
 }
 
@@ -56,6 +58,11 @@ function showCopyButton(){
 
     copyButton.classList.add("secondary-button");
     copyButton.classList.remove("hide");
+}
+
+function cleanLeft(){
+    document.getElementById('img').classList.add('erase');
+    document.getElementById('title').classList.add('erase');
 }
 
 function updateClipboard() {
