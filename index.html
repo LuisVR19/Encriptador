@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Encriptador</title>
 </head>
 <body>
     
@@ -15,7 +15,7 @@
         <div class="parent">
             <div class="left">
                 <div class="container">
-                    <textarea class="text" name="" id="" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                    <textarea class="text" name="" id="text" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
                     <div>
                         <span>
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -43,19 +43,21 @@
                         </span>
                     </div>
                     <div class="buttons">
-                        <button class="primary-button">Encriptar</button>
-                        <button class="secondary-button">Desencriptar</button>
+                        <button class="primary-button" onclick="encrypt()">Encriptar</button>
+                        <button class="secondary-button" onclick="desEncrypt()">Desencriptar</button>
                     </div>
                 </div>
             </div>
 
             <div class="rigth">
                 <div>
-                    <img src="assets/Muñeco.png" alt="">
-                    <h2>Ningún mensaje fue encontrado</h2>
-                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                  <div id="img">
+                    <img src="assets/Muñeco.png" alt="" id="img">
+                  </div>
+                    <h2 id="title">Ningún mensaje fue encontrado</h2>
+                    <textarea name="" id="resuilt" cols="30" rows="10" readonly>Ingresa el texto que desees encriptar o desencriptar.</textarea>
                     <div class="buttons">
-                        <!-- <button class="secondary-button">Copiar</button> -->
+                        <button class="hide" id="copyButton" onclick="updateClipboard()">Copiar</button>
                     </div>
                 </div>
             </div>
@@ -98,7 +100,7 @@
                         Luis Valverde Rios
                       </p>
                       <p>
-                        Copyright 2023 - Todos los derechos reservados.
+                        Copyright 2024 - Todos los derechos reservados.
                       </p>
                     </div>
                   </div>
@@ -108,3 +110,5 @@
       </footer>
 </body>
 </html>
+
+<script src="events.js"></script>

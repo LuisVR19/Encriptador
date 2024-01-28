@@ -135,3 +135,7 @@ button{
 .footer-container{
     margin-top: 2%;
   }
+
+.hide{
+    visibility: hidden;
+}
