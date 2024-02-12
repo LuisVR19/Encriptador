@@ -1,12 +1,15 @@
 :root {
     --fontBase: 'Poppins', sans-serif;
-    --white: #FFFFFF;
-    /* --colorBase : #F3F5FC; */
+    --background: #F3F5FC;
+    --primary_button: #0A3871;
+    --secondary_button: #D8DFE8;
+    --right_backgorund: #FFFFFF;
+    --footer_background: #D8DFE8;
   }
 
 body{
     align-items: center;
-    background: #F3F5FC;
+    background: var(--background);
     position: relative;
 
     display: grid;
@@ -53,9 +56,6 @@ textarea:focus {
 .left{
     align-items: center;
     justify-content: center;
-    /* display: flex; */
-    /* height: 85%; */
-    /* margin-top: 3%; */
 }
 
 .container{
@@ -73,7 +73,7 @@ textarea:focus {
     align-items: center;
     justify-content: center;
     display: flex;
-    background: #FFFFFF;
+    background: var(--right_backgorund);
     border-radius: 3rem ;
     height: 70vh;
     position: relative;
@@ -115,28 +115,28 @@ button{
 }
 
 .primary-button{
-    background-color: #0A3871;
+    background-color: var(--primary_button);
     color: #FFFFFF;
 }
 
 .primary-button:hover{
-    background-color: #D8DFE8;
-    color: #0A3871;
+    background-color: var(--secondary_button);
+    color: var(--primary_button);
 }
 
 .secondary-button{
     background-color: #D8DFE8;
-    color: #0A3871;
+    color: var(--primary_button);
 }
 
 .secondary-button:hover{
-    background-color: #0A3871;
+    background-color: var(--primary_button);
     color: #FFFFFF;
 }
 
 .footer{
     display: grid;
-    background: #D8DFE8;
+    background: var(--footer_background);
     border-radius: 12px;
 }
 
