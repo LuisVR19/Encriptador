@@ -23,7 +23,7 @@ function encrypt(){
 
 
     showCopyButton();
-    cleanLeft();
+    cleanRigth();
 
 }
 
@@ -50,6 +50,7 @@ function desEncrypt(){
     document.getElementById('resuilt').value = txtEncrypt;
     textArea.value = '';
     showCopyButton();
+    cleanRigth();
 
 }
 
@@ -60,9 +61,10 @@ function showCopyButton(){
     copyButton.classList.remove("hide");
 }
 
-function cleanLeft(){
-    document.getElementById('img').classList.add('erase');
-    document.getElementById('title').classList.add('erase');
+function cleanRigth(){
+    document.getElementById('rigth-stuff').classList.add('erase');
+    document.getElementById('container-result').classList.remove('erase');
+    document.getElementById('container-result').classList.add('container-result');
 }
 
 function updateClipboard() {
