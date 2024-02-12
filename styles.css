@@ -17,6 +17,7 @@ body{
     grid-template-rows: 5% 80% 15%;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+
 }
 
 .super-parent{
