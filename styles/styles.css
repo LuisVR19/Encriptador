@@ -64,9 +64,9 @@ textarea::placeholder {
     transform: translateY(-50%);
     width: 100%;
     padding: 0;
-    font-size: 16px; /* ajusta el tamaño de fuente según tus necesidades */
-    color: #999; /* ajusta el color según tus necesidades */
-    text-align: center; /* centra el placeholder */
+    font-size: 16px;
+    color: #999; 
+    text-align: center; 
     pointer-events: none; 
   }
 
@@ -149,10 +149,11 @@ textarea:focus {
 }
 
 button{
-    border-radius: 20px;
+    border-radius: 3rem;
     width: 45%;
     height: 3rem;
     margin: 1%;
+    border: none;
 }
 
 .primary-button{
@@ -179,10 +180,6 @@ button{
     display: grid;
     background: var(--footer_background);
     border-radius: 2rem;
-}
-
-.button-icon img {
-    /* vertical-align: middle; */
 }
 
 .footer-content {
