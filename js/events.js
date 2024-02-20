@@ -78,6 +78,13 @@ function updateClipboard() {
       },
     );
 }
+
+function validarTexto(textarea) {
+    var texto = textarea.value;
+    // Reemplazar caracteres especiales y mayúsculas con una cadena vacía
+    texto = texto.replace(/[^\w\s]/gi, '').toLowerCase();
+    textarea.value = texto;
+}
   
 /* 
 La letra "e" es convertida para "enter"

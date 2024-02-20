@@ -16,7 +16,7 @@
   <main class="parent">
       <article class="left">
           <div class="container-result">
-              <textarea class="text" name="" id="text" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+              <textarea class="text" name="" id="text" cols="30" rows="10" placeholder="Ingrese el texto aqui" oninput="validarTexto(this)"  pattern="[a-z\s]*" title="Por favor, ingresa solo letras minúsculas y espacios"></textarea>
               <div class="warning">
                   <span>
                     <img src="assets/exclamation.svg" width="25" height="25" alt="exclamation" id="img">
