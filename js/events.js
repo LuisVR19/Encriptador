@@ -1,6 +1,6 @@
 function encrypt(){
     var textArea = document.getElementById('text');
-    var txtOriginal = textArea.value;
+    var txtOriginal = textArea.value.toLowerCase();
     var txtEncrypt = '';
 
     for (var i = 0; i < txtOriginal.length; i++) {
@@ -29,7 +29,7 @@ function encrypt(){
 
 function desEncrypt(){
     var textArea = document.getElementById('text');
-    var txtOriginal = textArea.value;
+    var txtOriginal = textArea.value.toLowerCase();;
     var txtEncrypt = '';
     var temp = '';
     for (var i = 0; i < txtOriginal.length; i++) {
